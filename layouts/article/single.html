@@ -1,0 +1,16 @@
+{{ partial "head.html" . }}
+
+{{ partial "page-heading.html" . }}
+
+<div class="single-article">
+  <div class="single-article-title">
+    <h2>{{ .Title }}</h2>
+    <h6 class="mono">{{ .Date.Format "Monday, January 02, 2006" }}</h6>
+  </div>
+  <div class="single-article-content">
+    {{ .Content }}
+  </div>
+
+  <h4><a href="{{ .Site.BaseURL }}">Home</a></h4>
+</div>
+{{ partial "foot.html" . }}

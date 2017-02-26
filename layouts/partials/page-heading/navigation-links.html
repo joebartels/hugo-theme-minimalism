@@ -1,0 +1,11 @@
+<div class="navigation-links">
+  {{ $currentPage := . }}
+  {{- range .Site.Menus.main -}}
+    <a 
+      class="nav-link mono {{if ($currentPage.IsMenuCurrent "main" .)}}active{{end}}" 
+      href="{{.URL}}" title="{{.Name}}">
+      {{- .Name -}}
+    </a>
+  {{ end }}
+</div>
+

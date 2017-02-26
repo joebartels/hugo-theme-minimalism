@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>{{ .Title }}</title>
+  {{ .Hugo.Generator }}
+  {{ partial "head/meta_tags.html" . }}
+  {{ partial "head/fonts" . }}
+  {{ partial "head/css_markdown.html" . }}
+  {{ partial "head/css_layout.html" . }}
+  {{ partial "head/css_highlightjs.html" . }}
+</head>
+<body>

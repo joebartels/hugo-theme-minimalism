@@ -1,0 +1,21 @@
+<div class="many-articles-container">
+  <div class="many-articles">
+    {{- range first 10 .Data.Pages -}}
+      {{- if eq .Type "article"}}
+        <a class="item-row" href="{{ .Permalink }}">
+          <div class="item item-title">
+            <span class="title">
+              {{.Title}}
+              <span class="meta mono">(25min)</span>
+            </span>
+          </div>
+          <div class="item item-date mono">
+            {{ .Date.Format "Jan. 02, 2006" }}
+          </div>
+          <div class="lame-border"></div>
+          <div class="fancy-border"></div>
+        </a>
+      {{- end -}}
+    {{- end }}
+  </div>
+</div>

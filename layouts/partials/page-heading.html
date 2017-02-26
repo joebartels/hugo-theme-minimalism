@@ -1,0 +1,23 @@
+<div class="page-heading">
+  <div class="title-bar">
+    <div class="title-wrapper">
+      <a href="{{ .Site.BaseURL }}" title="Joseph Bartels">
+        <h1>{{ .Site.Title }}</h1>
+      </a>
+      <!-- 
+      <div class="icon-container">
+        {{- if .Site.Params.GithubUrl -}}
+          <div class="icon icon-github"></div>
+        {{- end -}}
+        {{- if .Site.Params.LinkedinUrl -}}
+          <div class="icon icon-linkedin"></div>
+        {{- end -}}
+        {{- if .Site.Params.NpmUrl -}}
+          <div class="icon icon-npm"></div>
+        {{- end -}}
+      </div>
+      -->
+    </div>
+  </div>
+  {{ partial "page-heading/navigation-links" . }}
+</div>
